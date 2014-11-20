@@ -1,0 +1,20 @@
+{
+  "name": "fineVideoUploader",
+  "version": "1.0.0",
+  "authors": [
+    "Ray Nicholus"
+  ],
+  "description": "Fine Uploader + frame-grab.js",
+  "license": "GPLv3",
+  "ignore": [
+    ".idea/",
+    "node_modules/"
+  ],
+  "dependencies": {
+    "frame-grab.js": "0.5.x",
+    "bootbox": "~4.3.0",
+    "bootstrap": "~3.3.1",
+    "jquery": "~2.1.1",
+    "magnific-popup": "~0.9.9"
+  }
+}

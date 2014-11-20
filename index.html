@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Frame Uploader</title>
+    <meta charset="utf-8" />
+
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/fineuploader/fineuploader.css" rel="stylesheet" type="text/css"/>
+    <link href="custom.css" rel="stylesheet" type="text/css"/>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <link href="/bower_components/magnific-popup/dist/magnific-popup.css" rel="stylesheet" type="text/css"/>
+    <script src="/bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
+
+    <script src="/bower_components/bootbox/bootbox.js"></script>
+
+    <script src="/bower_components/rsvp/rsvp.js"></script>
+    <script src="/bower_components/frame-grab.js/client/frame-grab.js"></script>
+    <script src="/fineuploader/all.fineuploader.js"></script>
+
+    <script src="client.js"></script>
+
+    <script type="text/template" id="qq-template">
+        <div class="qq-uploader-selector qq-uploader">
+            <button id="start-upload-button" class="btn btn-large btn-primary">Start Upload</button>
+
+            <ul class="qq-upload-list-selector qq-upload-list">
+                <li class="file-container">
+                    <div class="qq-progress-bar-container-selector progress">
+                        <div class="qq-progress-bar-selector progress-bar"></div>
+                    </div>
+                    <div class="file-info">
+                        <span class="qq-upload-spinner-selector qq-upload-spinner"></span>
+                        <img class="qq-thumbnail-selector frame-thumb" qq-max-size="100" qq-server-scale>
+                        <i class="glyphicon glyphicon-info-sign edit-description"></i>
+                        <span class="qq-upload-file-selector qq-upload-file"></span>
+                        <span class="qq-edit-filename-icon-selector qq-edit-filename-icon"></span>
+                        <input class="qq-edit-filename-selector qq-edit-filename" tabindex="0" type="text">
+                        <span class="qq-upload-size-selector qq-upload-size"></span>
+                    </div>
+                    <button class="qq-upload-cancel-selector btn btn-small btn-warning" href="#">Remove</button>
+                    <button class="qq-upload-retry-selector qq-upload-retry btn btn-small" href="#">Retry</button>
+                    <button class="qq-upload-delete-selector btn btn-small btn-danger" href="#">Delete</button>
+                    <span class="qq-upload-status-text-selector qq-upload-status-text"></span>
+                </li>
+            </ul>
+        </div>
+    </script>
+
+</head>
+<body>
+    <h2 class="demo-title">Video Frame Uploader</h2>
+
+    <div id="pleaseWaitDialog" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="progress progress-striped active">
+                        <div class="progress-bar" role="progressbar" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="errorDialog" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Error</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="error-message"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="video-drop-zone" class="empty">
+        <span class="drop-zone-text">Drop Video File Here</span>
+        <div id="video-container">
+            <video id="video" controls=""></video>
+            <i class="glyphicon glyphicon-picture grab-frame"></i>
+            <i class="glyphicon glyphicon-book tell-story"></i>
+        </div>
+    </div>
+
+    <div id="uploader"></div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+/*
+
+CSS for Fine Uploader UI.  Depends on a matching HTML file.
+Maintained by Widen Enterprises.
+
+See the HTML file comments for more details.
+
+*/
+
+.demo-title
+{
+    text-align: center;
+    font-weight: 200;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    color: #00abc7;
+    font-size: 36px;
+}
+
+#video-drop-zone.empty
+{
+    height: 300px;
+    border: solid 1px black;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#video-drop-zone.empty #video-container
+{
+    display: none;
+}
+
+#video-container .glyphicon
+{
+    font-size: 1.5em;
+    padding: 10px 20px;
+}
+
+.glyphicon
+{
+    cursor: pointer;
+}
+
+#video-drop-zone #video-container
+{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+VIDEO
+{
+    max-width: 1000px;
+    height: auto;
+}
+
+#video-drop-zone #video-container #video
+{
+    display: block;
+    margin: 0 auto;
+}
+
+#video-drop-zone .drop-zone-text
+{
+    display: none;
+}
+
+#video-drop-zone.empty .drop-zone-text
+{
+    /* Vertically & horizontally center the dynamically generated drop zone message
+    inside the drop zone & make it a bit presentable */
+    display: inline;
+    position: absolute;
+    vertical-align: middle;
+    line-height: 300px;
+    font-size: 200%;
+    width: 100%;
+    left: 0;
+    color: #cccccc;
+}
+
+.frame-thumb
+{
+    cursor: pointer;
+}
+
+.qq-upload-drop-area-active
+{
+    z-index: 10;
+    opacity: .7;
+}
+
+.qq-upload-drop-area-active #video-container
+{
+    z-index: 9;
+}
+
+LI.file-container
+{
+    /* Make sure the drop zone text is always at least a little visible */
+    opacity: .6;
+
+    /* Rounded file container corners */
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+
+    margin: 10px;
+
+    /* Used to un-center the text for each file item,
+    otherwise the .uploader-drop-zone text-align style will apply */
+    text-align: left;
+}
+
+#uploader
+{
+    width: 700px;
+    margin: 0 auto;
+}
+
+.qq-upload-success .edit-description
+{
+    display: none;
+}
+
+.edit-description
+{
+    padding: 0px 5px;
+}
+
+.qq-upload-button
+{
+    margin-bottom: 10px;
+
+    /* Rounded upload button corners */
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.file-info
+{
+    display: inline-block;
+    width: 575px;
+}
+
+#start-upload-button
+{
+    margin: 15px 0px;
+}
+
+IMG
+{
+    vertical-align: middle;
+}
+
+body
+{
+    background-color: #FEFEFC;
+    font-family: 'Maven Pro', sans-serif;
+    padding: 40px 40px;
+}
+
+h2
+{
+    font-weight: 200;
+    margin-bottom: 5px;
+    color: #00abc7;
+    font-size: 36px;
+}
+
+h4
+{
+    color: #e65c47;
+    font-weight: 300;
+}
