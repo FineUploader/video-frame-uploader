@@ -29,7 +29,7 @@ and upload frames from the video to easily tell a story.
 
 
 ## License
-This example and all example code is licesed under MIT.  Fine Uploader is
+This example and all example code is licensed under MIT.  Fine Uploader is
 licensed under a Widen Commercial License or GPL v3.  To purchase a commercial license,
 please see [our purchase page](http://fineuploader.com/purchase).
 
