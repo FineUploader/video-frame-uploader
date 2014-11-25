@@ -5,6 +5,10 @@ Drop a video and upload frames of your choosing and/or automatically parse
 and upload frames from the video to easily tell a story.
 
 
+Click the image to watch a quick demo  
+[![demo video](http://img.youtube.com/vi/hHBhP03JHIQ/0.jpg)](http://www.youtube.com/watch?v=hHBhP03JHIQ)
+
+
 ## Features
 - Drag and drop a video to render it as playable in the browser.
 - Preview & upload any number of frames by manually navigating to them in the video.
