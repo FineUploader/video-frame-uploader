@@ -34,7 +34,7 @@ Click the image to watch a quick demo
 
 ## License
 This example and all example code is licensed under MIT.  Fine Uploader is
-licensed under a Widen Commercial License or GPL v3.  To purchase a commercial license,
+licensed under a Widen Commercial License.  To purchase a commercial license,
 please see [our purchase page](http://fineuploader.com/purchase).
 
 
