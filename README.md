@@ -1,5 +1,6 @@
 Video Frame Uploader
 ====================
+[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?maxAge=2592000)](https://gitter.im/FineUploader?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
 
 Drop a video and upload frames of your choosing and/or automatically parse
 and upload frames from the video to easily tell a story.
