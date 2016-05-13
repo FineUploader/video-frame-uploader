@@ -39,16 +39,9 @@ See the [issue tracker](https://github.com/FineUploader/video-frame-uploader/iss
 
 ## Installation
 1. Clone this repo: `git clone https://github.com/FineUploader/video-frame-uploader.git`.  Switch to the newly created directory.
-2. [Grab a copy of Fine Uploader](http://fineuploader.com/downloads).
-3. Drop The Fine Uploader JavaScript and CSS files in a subdirectory called "assets".
-4. Also place the placeholder and other image files bundled with Fine Uploader in this new "assets" directory.
-5. Ensure the index.html file references the actual names of the Fine Uploader JS and CSS files.
-6. Ensure you have a current version of node.js installed.
-7. Install bower: `npm install -g bower`.
-8. Install all bower dependencies required by this app: `bower update`.
-9. Install all server-side node dependencies required by this app: `npm install`.
-10. Start the server: `node server`.
-11. Navigate to `http://localhost:8000` in your browser to use Video Frame Uploader.
+2. Load all dependencies, including Fine Uploader: `npm install`.
+3. Start the server: `npm start`.
+4. Navigate to `http://localhost:8000` in your browser to use Video Frame Uploader.
 
 ## Notes
 - You may customize server.js, index.html, custom.css, or client.js to suit your specific needs.
