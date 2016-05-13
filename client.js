@@ -81,8 +81,8 @@
 
             thumbnails: {
                 placeholders: {
-                    notAvailablePath: "/fineuploader/not_available-generic.png",
-                    waitingPath: "/fineuploader/waiting-generic.png"
+                    notAvailablePath: "/fineuploader/placeholders/not_available-generic.png",
+                    waitingPath: "/fineuploader/placeholders/waiting-generic.png"
                 }
             },
 

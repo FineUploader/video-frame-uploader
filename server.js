@@ -27,9 +27,7 @@ var PORT = 8000,
 
     // paths/constants
     fileInputName = "qqfile",
-    assetsPath = __dirname + "/assets/",
-    placeholdersPath = assetsPath + "placeholders/",
-    uploadedFilesPath = assetsPath + "uploadedFiles/",
+    uploadedFilesPath = __dirname + "/assets/uploadedFiles/",
     chunkDirName = "chunks";
 
 
@@ -39,8 +37,7 @@ console.log("Express server started on port %s", PORT);
 
 // routes
 app.use(express.static(__dirname));
-app.use("/fineuploader", express.static(assetsPath));
-app.use("/placeholders", express.static(placeholdersPath));
+app.use("/fineuploader", express.static(__dirname + "/node_modules/fine-uploader/jquery.fine-uploader/"));
 app.use("/uploads", express.static(uploadedFilesPath));
 app.post("/uploads", onUpload);
 app.delete("/uploads/:uuid", onDeleteFile);

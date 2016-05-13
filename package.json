@@ -3,8 +3,19 @@
   "description" : "Fine Uploader + frame-grab.js",
   "dependencies" : {
       "express": "3.x",
+      "fine-uploader": "5.x",
       "rimraf": "2.2.2",
       "mkdirp": "0.3.5"
   },
-  "version" : "1.0.0"
+  "devDependencies": {
+    "bower": "1.x"
+  },
+  "scripts": {
+    "postinstall": "bower update",
+    "start": "node server"
+  },
+  "version" : "2.0.0",
+  "engines" : {
+    "node" : ">=5.0.0"
+  }
 }
