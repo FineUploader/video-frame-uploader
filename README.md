@@ -1,6 +1,6 @@
 Video Frame Uploader
 ====================
-[![Freenode](https://img.shields.io/badge/chat-on%20freenode-brightgreen.svg)](irc://chat.freenode.net/#fineuploader)
+[![license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
 
 Drop a video and upload frames of your choosing and/or automatically parse
 and upload frames from the video to easily tell a story.
